@@ -7,7 +7,7 @@ The ngHelperDemo application is a small angularjs project generated with yeoman 
 Just clone this repository and start the development server
 
 ```
-grunt server
+grunt serve
 ````
 
 ## Contributing
