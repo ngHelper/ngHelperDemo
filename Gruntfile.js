@@ -354,6 +354,11 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
+        }, {
+            expand: true,
+            cwd: '.',
+            src: 'bower_components/ng-helper-crop-resize/assets/*',
+            dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {

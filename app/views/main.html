@@ -3,3 +3,59 @@
   <p>The busy indicator will be shown for 5 seconds in the demonstration</p>
   <input type="text" placeholder="enter a wait message" ng-model="busyMessage">&nbsp;<a ng-click="showBusyIndicator()">Show Busy</a>
 </div>
+
+<div class="row marketing">
+    <h4>Resize & Crop Directive</h4>
+    <p>The resize and crop directive is using a jquery plugin to adapt the size of the image and to crop it in a way
+       that the dimensions will stay but the image is centered.</p>
+
+    <table>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img src="images/avatardemo.jpg" style="width: 150px; height: 150px;">
+                </div>
+            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    The original image which is bigger then the target size!
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img src="images/avatardemo.jpg" style="width: 150px; height: 150px;" class="autoCropAndResize">
+                </div>
+            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    The image resized and cropped to 150 x 150 pixel
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img src="images/avatardemosmall.jpg" style="width: 150px; height: 150px;" class="autoCropAndResize">
+                </div>            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    A smaller image resized and cropped to 150 x 150 pixel
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img src="nonexiting.png" style="width: 150px; height: 150px;" class="autoCropAndResize">
+                </div>
+            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    A reference to a non existing image to show the default avatar
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

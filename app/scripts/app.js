@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngHelperBusy'
+    'ngHelperBusy',
+    'ngHelperCropResize'
   ])
   .config(function ($routeProvider) {
     $routeProvider
