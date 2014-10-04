@@ -9,6 +9,7 @@
  */
 angular.module('ngHelperDemoApp').controller('MainCtrl', [ '$scope', '$timeout', '$busy', function ($scope, $timeout, $busy) {
 
+    // busy indicator stuff
     $scope.showBusyIndicator = function() {
 
         // set the message
@@ -24,5 +25,14 @@ angular.module('ngHelperDemoApp').controller('MainCtrl', [ '$scope', '$timeout',
         $busy.during(timeoutPromise).then(function() {
             console.log("The busy sequences of 5 seconds is over");
         })
-    }
+    };
+
+    // image stuff
+    $scope.imageProperty = "images/avatardemosmall.jpg";
+    $scope.imagePropertyDelayed = null;
+
+    $timeout(function() {
+        $scope.imagePropertyDelayed = "images/avatardemosmall.jpg";
+    }, 3000);
+
 }]);

@@ -10,6 +10,7 @@
        that the dimensions will stay but the image is centered.</p>
 
     <table>
+
         <tr>
             <td style="padding-bottom: 15px;">
                 <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
@@ -42,6 +43,30 @@
             <td>
                 <div style="margin-left: 20px;">
                     A smaller image resized and cropped to 150 x 150 pixel
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img ng-src="{{imageProperty}}" style="width: 150px; height: 150px;" class="autoCropAndResize">
+                </div>            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    A smaller image resized and cropped to 150 x 150 pixel, data are received
+                    from a scope property
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 15px;">
+                <div style="width: 152px; height:152px;" class="highlight-resize-and-crop">
+                    <img ng-src="{{imagePropertyDelayed}}" style="width: 150px; height: 150px;" class="autoCropAndResize">
+                </div>            </td>
+            <td>
+                <div style="margin-left: 20px;">
+                    A smaller image resized and cropped to 150 x 150 pixel, data are received
+                    from a scope property which is filled with a delay
                 </div>
             </td>
         </tr>
